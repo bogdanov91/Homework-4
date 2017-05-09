@@ -5,10 +5,9 @@
 
 body {
   margin: auto;
-  width: 1020px;
-  background: linear-gradient(to bottom, hsl(192,82%,40%) 0%,hsl(192,82%,40%) 3%,hsl(192,80%,36%) 4%,hsl(192,80%,36%) 6%,hsl(186,100%,69%) 6%,hsl(185,86%,47%) 6%,hsl(186,81%,49%) 7%,hsl(186,78%,54%) 9%,hsl(186,78%,61%) 10%,hsl(187,79%,85%) 15%,hsl(184,76%,92%) 17%,hsl(185,75%,97%) 19%,hsl(0,0%,100%) 20%,hsl(185,63%,54%) 20%,hsl(187,60%,51%) 24%,hsl(191,80%,39%) 32%,hsl(192,82%,38%) 34%,hsl(193,84%,37%) 50%,hsl(197,86%,34%) 87%,hsl(198,86%,34%) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#1297b8', endColorstr='#0c739f',GradientType=0 );
-
+  width: 1002px;
+  background: url('images/background.png') repeat-x;
+  background-color: #0474a0;
 }
 
 a {
@@ -18,5 +17,32 @@ a {
 .container {
   background: white;
   height: 900px;
-  box-shadow: 0px 3px 4px 2px rgba(0,0,0,0.68);
+  box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.68);
+}
+
+.logo {
+  display: inline-block;
+  margin-left: 20px;
+  margin-top: 12px;
+}
+
+.contacts {
+  display: inline-block;
+  float: right;
+  margin-right: 20px;
+  margin-top: 12px;
+}
+
+.contacts p {
+  font-family: Tahoma;
+  color: #128aa7;
+  font-size: 14px;
+  font-weight: 400;
+  text-align: left;
+}
+
+.photo {
+  margin-top: -4px;
+  padding: 0;
+  border: 1px solid #098ba8;
 }
