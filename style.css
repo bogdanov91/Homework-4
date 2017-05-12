@@ -83,6 +83,7 @@ body {
 /*Основное меню*/
 
 .menu {
+  position: absolute;
   width: 1002px;
   height: 34px;
   background: #2f2f2f;
@@ -90,24 +91,28 @@ body {
   box-shadow: -1px 3px 5px 0px rgba(0, 0, 0, 0.75);
   font-size: 14px;
   text-align: center;
+
 }
 
 .menu li {
   display: inline-block;
   position: relative;
   list-style: none;
+
 }
 
 .menu a {
   display: inline-block;
+  position: relative;
   color: white;
   text-decoration: none;
-  margin: 9px 32px;
+  padding: 9px 35px;
 }
 
 .submenu {
   position: absolute;
   width: 115%;
+
 }
 
 .menu li:hover .submenu {
@@ -115,4 +120,66 @@ body {
   background: #2f2f2f;
   border-top: 1px solid black;
   box-shadow: -1px 7px 5px 0px rgba(0, 0, 0, 0.75);
+}
+
+
+/*Блок с колонками*/
+.wrap {
+  overflow: hidden;
+  margin-top: 32px;
+  text-align: center;
+}
+
+.wrap h2 {
+  font-family: Tahoma;
+  font-size: 14px;
+  line-height: 24px;
+  color:  #424c43;
+  margin-top: 5px;
+
+}
+
+.wrap p {
+  font-family: Tahoma;
+  font-size: 14px;
+  line-height: 24px;
+  color:  #424c43;
+  /*text-align: left;*/
+  padding: 3px;
+  margin: 3  px;
+
+}
+
+/*Блок информация*/
+.info {
+  float: left;
+  width: 209px;
+  height: 540px;
+  border: 1px solid #c7cacf;;
+  background: #eeeff1;
+}
+
+.main {
+  float: left;
+  width: 580px;
+  height: 540px;
+
+}
+
+.news {
+  float: left;
+  width: 209px;
+  height: 540px;
+  border: 1px solid #c7cacf;;
+  background: #eeeff1;
+
+}
+
+footer {
+  text-align: center;
+  font-family: Tahoma;
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.8);
+  margin: 7px;
+
 }
