@@ -7,7 +7,7 @@
 body {
   margin: auto;
   width: 1002px;
-  background: url('images/background.png') repeat-x;
+  background: url('images/background_cr.png') repeat-x;
   background-color: #0474a0;
 }
 
@@ -16,7 +16,6 @@ body {
 
 .container {
   background: white;
-  height: 991px;
   box-shadow: 0px 2px 4px 2px rgba(0, 0, 0, 0.68);
 }
 
@@ -63,6 +62,10 @@ body {
   margin-left: 5px;
 }
 
+.descr {
+  display: inline-block;
+}
+
 .countries a {
   font-family: Tahoma;
   color: #128aa7;
@@ -82,7 +85,6 @@ body {
 /*Основное меню*/
 
 .menu {
-  position: absolute;
   width: 1002px;
   height: 34px;
   background: #2f2f2f;
@@ -110,22 +112,24 @@ body {
   position: absolute;
   width: 115%;
   display: none;
+  border-top: 1px solid black;
 }
 
 .menu li:hover .submenu {
   display: block;
   background: #2f2f2f;
-  border-top: 1px solid #2f2f2f;;
-  box-shadow: 0px 4px 5px 1px rgba(0,0,0,0.75);
+  z-index: 1;
+  box-shadow: 0px 4px 5px 1px rgba(0, 0, 0, 0.75);
 }
 
 
 /*Блок с колонками*/
 
 .wrap {
-  width: 100%;
-  margin-top: 32px;
+  margin-top: 5px;
   text-align: center;
+  position: relative;
+  min-height: 538px;
 }
 
 .wrap h2 {
@@ -142,18 +146,28 @@ body {
   line-height: 24px;
   color: #424c43;
   padding: 3px;
-  margin: 3 px;
+  margin: 3px;
+}
+
+.left-col, .right-col {
+  position: absolute;
+  top: 0;
+  width: 26%;
+  bottom: 0;
+  left: 0;
+}
+
+.right-col {
+  left: auto;
+  right: 0;
 }
 
 
 /*Блок Информация*/
 
 .info {
-  float: left;
-  width: 209px;
-  height: 540px;
-  border: 1px solid #c7cacf;
   background: #eeeff1;
+  border-top: none;
 }
 
 
@@ -161,19 +175,19 @@ body {
 
 .main {
   float: left;
-  width: 580px;
-  height: 540px;
+  width: 48%;
+  height: 537px;
+  border: 1px solid #c7cacf;
+  border-top: none;
+  border-bottom: none;
 }
 
 
 /*Блок Новости*/
 
 .news {
-  float: left;
-  width: 209px;
-  height: 540px;
-  border: 1px solid #c7cacf;
   background: #eeeff1;
+  border-top: none;
 }
 
 
